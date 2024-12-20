@@ -1,0 +1,30 @@
+{
+  "name": "@flipify/core",
+  "version": "0.0.1",
+  "description": "Flipify is a Type-Safe, Customizable, Concise, and Intuitive Declarative Flip Animation Library.",
+  "scripts": {
+    "build": "tsup"
+  },
+  "type": "module",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.js",
+      "default": "./dist/index.cjs"
+    }
+  },
+  "keywords": [
+    "Flip",
+    "Flip Animation",
+    "React Flip Animation",
+    "Number Flip Animation",
+    "Flip Counter",
+    "React Flip Counter"
+  ],
+  "author": {
+    "name": "HyoungMin",
+    "email": "hyoungqu23@gmail.com",
+    "url": "https://github.com/hyoungqu23"
+  },
+  "license": "MIT"
+}
