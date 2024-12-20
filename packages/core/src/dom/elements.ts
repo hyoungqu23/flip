@@ -23,3 +23,24 @@ export const createMinusElement = (container: HTMLElement, value: number) => {
   }
 };
 
+export const setCardElementByDigit = (value: number, create: (i: number) => void) => {
+  const currentDigits = getDigits(value);
+
+  const uls = document.querySelectorAll<HTMLUListElement>('ul.flip');
+
+  if (currentDigits.length !== uls.length) {
+    if (currentDigits.length > uls.length) {
+      for (let i = uls.length + 1; i <= currentDigits.length; i++) {
+        create(i);
+      }
+    } else {
+      for (let i = uls.length; i > currentDigits.length; i--) {
+        const targetUl = document.querySelector<HTMLUListElement>(
+          `ul.flip[data-digit="${Math.pow(10, i - 1)}"]`,
+        );
+
+        targetUl?.remove();
+      }
+    }
+  }
+};
