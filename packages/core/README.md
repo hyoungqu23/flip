@@ -45,16 +45,29 @@ yarn add @flipify/core
 ```javascript
 import { initialize } from '@flipify/core';
 
-const container = document.getElementById('flip-container');
+document.addEventListener('DOMContentLoaded', () => {
+  const container = document.querySelector('div.flip-container');
 
-const { trigger } = initialize(container, 0, { useDigit: true });
+  console.log(container);
 
-let currentNumber = 0;
+  container.style.width = '100vw';
+  container.style.height = '100vh';
 
-setInterval(() => {
-  currentNumber = currentNumber + 1;
-  trigger(currentNumber);
-}, 1000);
+  let currentNumber = 97;
+  const { trigger } = initialize(container, currentNumber, { useDigit: true });
+
+  const interval = setInterval(() => {
+    currentNumber += 1;
+
+    if (trigger) {
+      trigger(currentNumber);
+    }
+  }, 1000);
+
+  window.addEventListener('unload', () => {
+    clearInterval(interval);
+  });
+});
 ```
 
 ### React
