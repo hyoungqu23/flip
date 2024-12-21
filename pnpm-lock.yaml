@@ -56,6 +56,16 @@ importers:
         specifier: ^5.7.2
         version: 5.7.2
 
+  examples/javascript:
+    dependencies:
+      '@flipify/core':
+        specifier: workspace:^
+        version: link:../../packages/core
+    devDependencies:
+      vite:
+        specifier: ^6.0.3
+        version: 6.0.5
+
   examples/react:
     dependencies:
       '@flipify/core':

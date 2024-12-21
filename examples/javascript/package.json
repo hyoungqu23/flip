@@ -1,0 +1,17 @@
+{
+  "name": "javascript",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.3"
+  },
+  "dependencies": {
+    "@flipify/core": "workspace:^"
+  }
+}
