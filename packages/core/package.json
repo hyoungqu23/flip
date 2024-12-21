@@ -1,6 +1,6 @@
 {
   "name": "@flipify/core",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Flipify is a Type-Safe, Customizable, Concise, and Intuitive Declarative Flip Animation Library.",
   "scripts": {
     "build": "tsup",
