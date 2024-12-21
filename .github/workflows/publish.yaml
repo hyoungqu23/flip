@@ -40,4 +40,4 @@ jobs:
       - name: Version and Publish
         run: pnpm -r --filter './packages/*' --filter '[origin/main]...' pub
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
