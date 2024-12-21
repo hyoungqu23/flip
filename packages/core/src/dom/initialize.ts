@@ -1,4 +1,4 @@
-import type { TOptions } from '../types.ts';
+import type { TOptions } from '../types';
 import { getDirection } from '../utils/number';
 import { applyAnimation } from './animation';
 import { createCardElements, createMinusElement, setCardElementByDigit } from './elements';
@@ -11,7 +11,7 @@ export const initialize = (container: HTMLElement, value: number, options?: TOpt
   let _previousValue: number | undefined;
 
   if (_previousValue === undefined) {
-    createCardElements(_container, value, _previousValue === undefined, options);
+    createCardElements(_container, value, true, options);
   }
 
   const trigger = (value: number) => {
@@ -23,7 +23,7 @@ export const initialize = (container: HTMLElement, value: number, options?: TOpt
 
     if (options?.useDigit) {
       setCardElementByDigit(value, (i: number) =>
-        createCardElements(_container, Math.pow(10, i - 1), true, options),
+        createCardElements(_container, Math.pow(10, i - 1), false, options),
       );
     }
 

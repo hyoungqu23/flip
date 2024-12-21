@@ -1,4 +1,4 @@
-import type { TDirection } from '../types.ts';
+import type { TDirection } from '../types';
 import { getDigits } from '../utils/digits';
 import { getConsecutiveNumber } from '../utils/number';
 

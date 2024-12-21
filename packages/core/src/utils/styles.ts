@@ -4,7 +4,7 @@ const defaultStyles = {
   style: {
     card: { width: 300, height: 400, borderRadius: 10, fontSize: 200 },
     number: { color: '#FFFFFF', backgroundColor: '#000000' },
-    centerLine: { height: 10, backgroundColor: '#DDDDDD' },
+    centerLine: { height: 10, backgroundColor: '#DDDDDD50' },
   },
   animation: { duration: 500 },
 };
@@ -192,7 +192,7 @@ export const setCSSVariables = (variables: Record<string, TDimension | TColor | 
 
     if (typeof value === 'number') {
       if (key.includes('duration')) {
-        formattedValue = `${value}s`;
+        formattedValue = `${value}ms`;
       } else {
         formattedValue = `${value}px`;
       }

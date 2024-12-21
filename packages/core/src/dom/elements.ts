@@ -1,4 +1,4 @@
-import type { TOptions } from '../types.ts';
+import type { TOptions } from '../types';
 import { getDigits } from '../utils/digits';
 import { applyStyles, styleElementContent } from '../utils/styles';
 
@@ -52,15 +52,18 @@ export const createCardElements = (
 
   if (isFirst) {
     applyStyles(options);
-    createStyleElement();
+
+    if (!document.querySelector('style.flip')) {
+      createStyleElement();
+    }
   }
 };
 
 const createStyleElement = () => {
   const style = document.createElement('style');
+  style.classList.add('flip');
 
   style.textContent = styleElementContent;
-
   document.head.appendChild(style);
 };
 
