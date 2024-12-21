@@ -1,6 +1,6 @@
 # Flipify
 
-![Demo](./assets//flip.gif)
+![Demo](../../assets/flip.gif)
 
 Flipify는 선언적인 Flip 애니메이션을 위한 타입스크립트 라이브러리입니다.
 
@@ -25,15 +25,15 @@ Flipify는 선언적인 Flip 애니메이션을 위한 타입스크립트 라이
 ## Installation
 
 ```bash
-npm install @flipify/core @flipify/react
+npm install @flipify/core
 ```
 
 ```bash
-pnpm add @flipify/core @flipify/react
+pnpm add @flipify/core
 ```
 
 ```bash
-yarn add @flipify/core @flipify/react
+yarn add @flipify/core
 ```
 
 ## Usages
