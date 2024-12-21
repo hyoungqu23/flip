@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "lint": "eslint '**/*.{ts,tsx,js,jsx}'",
-    "format": "prettier --check '**/*.{ts,tsx,js,jsx,json,md}'"
+    "format": "prettier --check '**/*.{ts,tsx,js,jsx,json,md}'",
+    "build": "pnpm -F './packages/*' build"
   },
   "devDependencies": {
     "@eslint/compat": "^1.2.4",
