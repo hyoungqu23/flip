@@ -32,5 +32,8 @@
     "email": "hyoungqu23@gmail.com",
     "url": "https://github.com/hyoungqu23"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT"
 }
