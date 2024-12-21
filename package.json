@@ -4,7 +4,8 @@
   "scripts": {
     "lint": "eslint '**/*.{ts,tsx,js,jsx}'",
     "format": "prettier --check '**/*.{ts,tsx,js,jsx,json,md}'",
-    "build": "pnpm -F './packages/*' build"
+    "build": "pnpm -F './packages/*' build",
+    "pub": "pnpm -F './packages/*' pub"
   },
   "devDependencies": {
     "@eslint/compat": "^1.2.4",
