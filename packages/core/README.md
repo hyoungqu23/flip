@@ -1,7 +1,5 @@
 # Flipify
 
-![Demo](../../assets/flip.gif)
-
 Flipify는 선언적인 Flip 애니메이션을 위한 타입스크립트 라이브러리입니다.
 
 ## Features
