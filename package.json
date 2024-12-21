@@ -1,7 +1,10 @@
 {
   "name": "flipify",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "lint": "eslint '**/*.{ts,tsx,js,jsx}'",
+    "format": "prettier --check '**/*.{ts,tsx,js,jsx,json,md}'"
+  },
   "devDependencies": {
     "@eslint/compat": "^1.2.4",
     "@eslint/eslintrc": "^3.2.0",
