@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Flipify is a Type-Safe, Customizable, Concise, and Intuitive Declarative Flip Animation Library.",
   "scripts": {
-    "build": "tsup"
+    "build": "tsup",
+    "pub": "pnpm build && pnpm publish --no-git-checks --access public"
   },
   "type": "module",
   "exports": {
