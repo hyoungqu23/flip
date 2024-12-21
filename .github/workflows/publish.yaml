@@ -38,9 +38,6 @@ jobs:
           git config user.email "actions@github.com"
 
       - name: Version and Publish
-        run: |
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
-          pnpm publish -r --access public --no-git-checks
+        run: pnpm -r --filter './packages/*' --filter '[origin/main]...' pub
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
