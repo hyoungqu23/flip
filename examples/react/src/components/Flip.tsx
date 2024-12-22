@@ -1,10 +1,10 @@
 import { initialize } from '@flipify/core';
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
-export const Flip: React.FC = () => {
+export const Flip = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const triggerRef = useRef<((value: number) => void) | null>(null);
-  const [currentNumber, setCurrentNumber] = useState(97);
+  const triggerRef = useRef<ReturnType<typeof initialize>['trigger'] | null>(null);
+  const [currentNumber, setCurrentNumber] = useState(0);
 
   useEffect(() => {
     const container = containerRef.current;
