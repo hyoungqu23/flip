@@ -1,24 +1,31 @@
 # Flipify
 
-Flipify는 선언적인 Flip 애니메이션을 위한 타입스크립트 라이브러리입니다.
+![NPM Version](https://img.shields.io/npm/v/%40flipify%2Fcore)
+![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/%40flipify%2Fcore)
+![NPM License](https://img.shields.io/npm/l/%40flipify%2Fcore)
+![NPM Downloads](https://img.shields.io/npm/d18m/%40flipify%2Fcore)
+![NPM Last Update](https://img.shields.io/npm/last-update/%40flipify%2Fcore)
+![NPM Type Definitions](https://img.shields.io/npm/types/%40flipify%2Fcore)
+
+Flipify is a TypeScript library for declarative Flip animations.
 
 ## Features
 
-- 선언적인 Trigger 기반 애니메이션
+- **Declarative Trigger-Based Animations**
 
-  Flipify는 Flip 애니메이션을 선언적으로 처리해 간결하고 명확합니다. 사용자는 Trigger 함수 하나로, 애니메이션을 구현할 수 있습니다.
+  Flipify allows for concise and clear implementation of Flip animations declaratively. Users can create animations with a single `trigger` function.
 
-- TypeScript 기반의 강력한 타입 안정성
+- **Strong Type Safety with TypeScript**
 
-  Flipify는 상세하고 직관적인 타입 정의를 제공하여 안정적이고 예측 가능합니다.
+  Flipify offers detailed and intuitive type definitions, making it reliable and predictable.
 
-- 유연한 스타일 커스터마이징
+- **Flexible Style Customization**
 
-  Flipify는 다양한 요구사항에 맞춰 세부적인 스타일 속성을 제어할 수 있습니다. 물론, 기본값을 활용해 간편하게 사용할 수도 있습니다.
+  Flipify enables detailed control over style properties to meet diverse requirements while remaining easy to use with default values.
 
-- 반응형 디자인 지원
+- **Responsive Design Support**
 
-  Flipify는 다양한 화면 크기에서 자연스럽게 적용됩니다.
+  Flipify works seamlessly across various screen sizes.
 
 ## Installation
 
@@ -109,21 +116,21 @@ export const Flip: React.FC = () => {
 
 ## Options
 
-| **옵션**                           | **타입**     | **설명**               | **기본값**  | **비고**                                                   |
-| ---------------------------------- | ------------ | ---------------------- | ----------- | ---------------------------------------------------------- |
-| `useDigit`                         | `boolean`    | 자릿수 변경 여부       | `false`     | `true`, `false`                                            |
-| `animation.duration`               | `TDuration`  | 애니메이션의 지속 시간 | `500`       | `ms` 단위, 예: `1000`, `500`                               |
-| `style.card.width`                 | `TDimension` | 카드의 너비            | `300px`     | `number`로도 사용 가능, 예: `100px`, `20%`, `10rem`, `100` |
-| `style.card.height`                | `TDimension` | 카드의 높이            | `400px`     | `number`로도 사용 가능, 예: `200px`, `20%`, `10rem`, `200` |
-| `style.card.fontSize`              | `TDimension` | 카드의 폰트 크기       | `200px`     | `number`로도 사용 가능 , 예: `20px`, `3rem`, `18`          |
-| `style.card.borderRadius`          | `TDimension` | 카드의 테두리 반경     | `10px`      | `number`로도 사용 가능 , 예: `10px`, `50%`, `5`            |
-| `style.centerLine.height`          | `TDimension` | 중앙선의 높이          | `10px`      | `number`로도 사용 가능 , 예: `2px`, `1rem`, `5`            |
-| `style.centerLine.backgroundColor` | `TColor`     | 중앙선의 배경색        | `#DDDDDD50` | 예: `#000000`, `rgba(0, 0, 0, 0.2)`                        |
-| `style.number.color`               | `TColor`     | 숫자의 색상            | `#FFFFFF`   | 예: `white`, `#ff5722`, `rgb(0, 0, 0)`                     |
-| `style.number.backgroundColor`     | `TColor`     | 숫자의 배경색          | `#000000`   | 예: `black`, `#eeeeee`, `rgb(255, 255, 255)`               |
+| **Option**                         | **Type**     | **Description**                 | **Default** | **Remarks**                                                 |
+| ---------------------------------- | ------------ | ------------------------------- | ----------- | ----------------------------------------------------------- |
+| `useDigit`                         | `boolean`    | Toggle digit change             | `false`     | `true`, `false`                                             |
+| `animation.duration`               | `TDuration`  | Animation duration              | `500`       | In `ms`, e.g., `1000`, `500`                                |
+| `style.card.width`                 | `TDimension` | Width of the card               | `300px`     | Can also use `number`, e.g., `100px`, `20%`, `10rem`, `100` |
+| `style.card.height`                | `TDimension` | Height of the card              | `400px`     | Can also use `number`, e.g., `200px`, `20%`, `10rem`, `200` |
+| `style.card.fontSize`              | `TDimension` | Font size of the card           | `200px`     | Can also use `number`, e.g., `20px`, `3rem`, `18`           |
+| `style.card.borderRadius`          | `TDimension` | Border radius of card           | `10px`      | Can also use `number`, e.g., `10px`, `50%`, `5`             |
+| `style.centerLine.height`          | `TDimension` | Height of the center line       | `10px`      | Can also use `number`, e.g., `2px`, `1rem`, `5`             |
+| `style.centerLine.backgroundColor` | `TColor`     | Background color of center line | `#DDDDDD50` | E.g., `#000000`, `rgba(0, 0, 0, 0.2)`                       |
+| `style.number.color`               | `TColor`     | Color of the number             | `#FFFFFF`   | E.g., `white`, `#ff5722`, `rgb(0, 0, 0)`                    |
+| `style.number.backgroundColor`     | `TColor`     | Background color of number      | `#000000`   | E.g., `black`, `#eeeeee`, `rgb(255, 255, 255)`              |
 
 ## Licenses
 
 [MIT License](./LICENSE)
 
-Copyright (c) 2024 HyoungMin
+Copyright (c) 2024 HyoungMin.
