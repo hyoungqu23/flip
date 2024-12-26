@@ -30,14 +30,13 @@ export const createCardElements = (
         li.classList.add('flip', 'card');
         li.dataset.number = String(i);
 
-        li.innerHTML = `
-          <div class="flip upper">
-            <span class="flip number">${i}</span>
-          </div>
-          <div class="flip lower">
-            <span class="flip number">${i}</span>
-          </div>
-        `;
+        li.innerHTML =
+          '<div class="flip upper"><span class="flip number">' +
+          i +
+          '</span></div><div class="flip lower"><span class="flip number">' +
+          i +
+          '</span></div>';
+
         fragment.appendChild(li);
       }
       newUl.appendChild(fragment);
